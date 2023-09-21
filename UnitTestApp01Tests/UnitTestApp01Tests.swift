@@ -18,6 +18,7 @@ final class UnitTestApp01Tests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
+    //test
     func test_succeed() {
         let calculationNumber = CalculationNumber()   // 足し算を行うためにインスタンス化
         let answer = calculationNumber.Add(a: 10, b: 20)   // 足し算, answer = 30
