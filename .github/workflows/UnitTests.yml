@@ -19,7 +19,7 @@ jobs:
       - name: UnitTests
         run: |
           xcodebuild test \
-            -project ../UnitTestApp01.xcodeproj \
+            -project UnitTestApp01.xcodeproj \
             -scheme UnitTestApp01 \
             -destination 'platform=iOS Simulator,name=iPhone 11'
 
