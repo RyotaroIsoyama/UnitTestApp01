@@ -17,6 +17,6 @@ jobs:
           xcode-version: '14.1.0'
 
       - name: UnitTests
-        run: xcodebuild test -project UnitTestApp01.xcodeproj -scheme UnitTestApp01 -sdk iphonesimulator -destination 'platform=iOS Simulator,id=dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder,name=Any iOS Simulator Device'
+        run: xcodebuild test -project UnitTestApp01.xcodeproj -scheme UnitTestApp01 -destination 'platform=iOS Simulator,id=dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder,name=Any iOS Simulator Device'
 
 
