@@ -12,6 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: muukii/actions-xcode-install-simulator@main
+        with:
+          ios_version: "16.4"
+
       - name: UnitTests
         run: |
           xcodebuild test \
