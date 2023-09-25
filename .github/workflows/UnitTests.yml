@@ -18,6 +18,7 @@ jobs:
             -project UnitTestApp01.xcodeproj \
             -scheme UnitTestApp01 \
             -configuration Debug \
-            -destination 'platform=iOS Simulator,name=iPhone 11'
+            -destination 'platform=iOS Simulator' \
+            -sdk iphonesimulator
 
 
