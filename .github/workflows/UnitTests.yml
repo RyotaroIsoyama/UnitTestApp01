@@ -12,21 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Cache
-        uses: actions/cache@v3
+      - uses: maxim-lobanov/setup-xcode@v1
         with:
-          path: "~/Downloads"
-          key: ${{ runner.os }}-runtimes-downloads-16.4        
-      - name: Install Xcodes
-        shell: bash
-        run: |
-          brew install aria2
-          brew tap robotsandpencils/made
-          brew install robotsandpencils/made/xcodes
-          xcodes install --latest
-      - name: Install Simulator
-        shell: bash
-        run: sudo xcodes runtimes install --keep-archive 'iOS 16.4'
+          xcode-version: '14.3.1'
+
+      - uses: muukii/actions-xcode-install-simulator@main
+        with:
+          ios_version: "16.4"
 
       - name: UnitTests
         run: |
