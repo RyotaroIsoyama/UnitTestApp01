@@ -16,9 +16,11 @@ jobs:
         with:
           xcode-version: '14.3.1'
 
-      - uses: muukii/actions-xcode-install-simulator@main
+      - uses: futureware-tech/simulator-action@v2
         with:
-          ios_version: "16.4"
+          model: 'iPhone 14'
+          os: 'iOS'
+          os_version: '16.4'
 
       - name: UnitTests
         run: |
