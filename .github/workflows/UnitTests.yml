@@ -1,4 +1,3 @@
-
 name: UnitTests
 
 on:
@@ -14,21 +13,7 @@ jobs:
 
       - uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '14.3.1'
-
-      # - uses: futureware-tech/simulator-action@v2
-      #   with:
-      #     model: 'iPhone 14'
-      #     os: 'iOS'
-      #     os_version: '16.4'
+          xcode-version: '14.1.0'
 
       - name: UnitTests
-        run: |
-          xcodebuild test \
-            -project UnitTestApp01.xcodeproj \
-            -scheme UnitTestApp01 \
-            -configuration Debug \
-            -destination 'platform=iOS Simulator,OS=16.4,name=iPhone 14' \
-            -sdk iphonesimulator
-
-
+        run: xcodebuild test -project UnitTestApp01.xcodeproj -scheme UnitTestApp01 -sdk iphonesimulator -destination 'platform=iOS Simulator,id=dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder,name=Any iOS Simulator Device'
