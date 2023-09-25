@@ -16,11 +16,11 @@ jobs:
         with:
           xcode-version: '14.3.1'
 
-      - uses: futureware-tech/simulator-action@v2
-        with:
-          model: 'iPhone 14'
-          os: 'iOS'
-          os_version: '16.4'
+      # - uses: futureware-tech/simulator-action@v2
+      #   with:
+      #     model: 'iPhone 14'
+      #     os: 'iOS'
+      #     os_version: '16.4'
 
       - name: UnitTests
         run: |
