@@ -18,7 +18,7 @@ jobs:
             -project UnitTestApp01.xcodeproj \
             -scheme UnitTestApp01 \
             -configuration Debug \
-            -destination 'platform=iOS Simulator, OS=16.4, name=iPhone14' \
+            -destination 'platform=iOS Simulator,OS=16.4,name=iPhone 14' \
             -sdk iphonesimulator
 
 
